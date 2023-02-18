@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAE66BEE29A0CA8E001E6DDD /* BiteBuddiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE66BED29A0CA8E001E6DDD /* BiteBuddiesApp.swift */; };
+		EAE66BF029A0CA8E001E6DDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE66BEF29A0CA8E001E6DDD /* ContentView.swift */; };
+		EAE66BF229A0CA8E001E6DDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE66BF129A0CA8E001E6DDD /* Assets.xcassets */; };
+		EAE66BF529A0CA8E001E6DDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE66BF429A0CA8E001E6DDD /* Preview Assets.xcassets */; };
+		EAE66BFF29A0CA8F001E6DDD /* BiteBuddiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE66BFE29A0CA8F001E6DDD /* BiteBuddiesTests.swift */; };
+		EAE66C0929A0CA8F001E6DDD /* BiteBuddiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE66C0829A0CA8F001E6DDD /* BiteBuddiesUITests.swift */; };
+		EAE66C0B29A0CA8F001E6DDD /* BiteBuddiesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE66C0A29A0CA8F001E6DDD /* BiteBuddiesUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAE66BFB29A0CA8F001E6DDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAE66BE229A0CA8E001E6DDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAE66BE929A0CA8E001E6DDD;
+			remoteInfo = BiteBuddies;
+		};
+		EAE66C0529A0CA8F001E6DDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAE66BE229A0CA8E001E6DDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAE66BE929A0CA8E001E6DDD;
+			remoteInfo = BiteBuddies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EAE66BEA29A0CA8E001E6DDD /* BiteBuddies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiteBuddies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE66BED29A0CA8E001E6DDD /* BiteBuddiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiteBuddiesApp.swift; sourceTree = "<group>"; };
+		EAE66BEF29A0CA8E001E6DDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EAE66BF129A0CA8E001E6DDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAE66BF429A0CA8E001E6DDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EAE66BFA29A0CA8F001E6DDD /* BiteBuddiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiteBuddiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE66BFE29A0CA8F001E6DDD /* BiteBuddiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiteBuddiesTests.swift; sourceTree = "<group>"; };
+		EAE66C0429A0CA8F001E6DDD /* BiteBuddiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiteBuddiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE66C0829A0CA8F001E6DDD /* BiteBuddiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiteBuddiesUITests.swift; sourceTree = "<group>"; };
+		EAE66C0A29A0CA8F001E6DDD /* BiteBuddiesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiteBuddiesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAE66BE729A0CA8E001E6DDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE66BF729A0CA8F001E6DDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE66C0129A0CA8F001E6DDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAE66BE129A0CA8E001E6DDD = {
+			isa = PBXGroup;
+			children = (
+				EAE66BEC29A0CA8E001E6DDD /* BiteBuddies */,
+				EAE66BFD29A0CA8F001E6DDD /* BiteBuddiesTests */,
+				EAE66C0729A0CA8F001E6DDD /* BiteBuddiesUITests */,
+				EAE66BEB29A0CA8E001E6DDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAE66BEB29A0CA8E001E6DDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAE66BEA29A0CA8E001E6DDD /* BiteBuddies.app */,
+				EAE66BFA29A0CA8F001E6DDD /* BiteBuddiesTests.xctest */,
+				EAE66C0429A0CA8F001E6DDD /* BiteBuddiesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAE66BEC29A0CA8E001E6DDD /* BiteBuddies */ = {
+			isa = PBXGroup;
+			children = (
+				EAE66BED29A0CA8E001E6DDD /* BiteBuddiesApp.swift */,
+				EAE66BEF29A0CA8E001E6DDD /* ContentView.swift */,
+				EAE66BF129A0CA8E001E6DDD /* Assets.xcassets */,
+				EAE66BF329A0CA8E001E6DDD /* Preview Content */,
+			);
+			path = BiteBuddies;
+			sourceTree = "<group>";
+		};
+		EAE66BF329A0CA8E001E6DDD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EAE66BF429A0CA8E001E6DDD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EAE66BFD29A0CA8F001E6DDD /* BiteBuddiesTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAE66BFE29A0CA8F001E6DDD /* BiteBuddiesTests.swift */,
+			);
+			path = BiteBuddiesTests;
+			sourceTree = "<group>";
+		};
+		EAE66C0729A0CA8F001E6DDD /* BiteBuddiesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAE66C0829A0CA8F001E6DDD /* BiteBuddiesUITests.swift */,
+				EAE66C0A29A0CA8F001E6DDD /* BiteBuddiesUITestsLaunchTests.swift */,
+			);
+			path = BiteBuddiesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAE66BE929A0CA8E001E6DDD /* BiteBuddies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAE66C0E29A0CA8F001E6DDD /* Build configuration list for PBXNativeTarget "BiteBuddies" */;
+			buildPhases = (
+				EAE66BE629A0CA8E001E6DDD /* Sources */,
+				EAE66BE729A0CA8E001E6DDD /* Frameworks */,
+				EAE66BE829A0CA8E001E6DDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BiteBuddies;
+			productName = BiteBuddies;
+			productReference = EAE66BEA29A0CA8E001E6DDD /* BiteBuddies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAE66BF929A0CA8F001E6DDD /* BiteBuddiesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAE66C1129A0CA8F001E6DDD /* Build configuration list for PBXNativeTarget "BiteBuddiesTests" */;
+			buildPhases = (
+				EAE66BF629A0CA8F001E6DDD /* Sources */,
+				EAE66BF729A0CA8F001E6DDD /* Frameworks */,
+				EAE66BF829A0CA8F001E6DDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAE66BFC29A0CA8F001E6DDD /* PBXTargetDependency */,
+			);
+			name = BiteBuddiesTests;
+			productName = BiteBuddiesTests;
+			productReference = EAE66BFA29A0CA8F001E6DDD /* BiteBuddiesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EAE66C0329A0CA8F001E6DDD /* BiteBuddiesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAE66C1429A0CA8F001E6DDD /* Build configuration list for PBXNativeTarget "BiteBuddiesUITests" */;
+			buildPhases = (
+				EAE66C0029A0CA8F001E6DDD /* Sources */,
+				EAE66C0129A0CA8F001E6DDD /* Frameworks */,
+				EAE66C0229A0CA8F001E6DDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAE66C0629A0CA8F001E6DDD /* PBXTargetDependency */,
+			);
+			name = BiteBuddiesUITests;
+			productName = BiteBuddiesUITests;
+			productReference = EAE66C0429A0CA8F001E6DDD /* BiteBuddiesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAE66BE229A0CA8E001E6DDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					EAE66BE929A0CA8E001E6DDD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					EAE66BF929A0CA8F001E6DDD = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = EAE66BE929A0CA8E001E6DDD;
+					};
+					EAE66C0329A0CA8F001E6DDD = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = EAE66BE929A0CA8E001E6DDD;
+					};
+				};
+			};
+			buildConfigurationList = EAE66BE529A0CA8E001E6DDD /* Build configuration list for PBXProject "BiteBuddies" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAE66BE129A0CA8E001E6DDD;
+			productRefGroup = EAE66BEB29A0CA8E001E6DDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAE66BE929A0CA8E001E6DDD /* BiteBuddies */,
+				EAE66BF929A0CA8F001E6DDD /* BiteBuddiesTests */,
+				EAE66C0329A0CA8F001E6DDD /* BiteBuddiesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAE66BE829A0CA8E001E6DDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE66BF529A0CA8E001E6DDD /* Preview Assets.xcassets in Resources */,
+				EAE66BF229A0CA8E001E6DDD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE66BF829A0CA8F001E6DDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE66C0229A0CA8F001E6DDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAE66BE629A0CA8E001E6DDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE66BF029A0CA8E001E6DDD /* ContentView.swift in Sources */,
+				EAE66BEE29A0CA8E001E6DDD /* BiteBuddiesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE66BF629A0CA8F001E6DDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE66BFF29A0CA8F001E6DDD /* BiteBuddiesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE66C0029A0CA8F001E6DDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE66C0929A0CA8F001E6DDD /* BiteBuddiesUITests.swift in Sources */,
+				EAE66C0B29A0CA8F001E6DDD /* BiteBuddiesUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAE66BFC29A0CA8F001E6DDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAE66BE929A0CA8E001E6DDD /* BiteBuddies */;
+			targetProxy = EAE66BFB29A0CA8F001E6DDD /* PBXContainerItemProxy */;
+		};
+		EAE66C0629A0CA8F001E6DDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAE66BE929A0CA8E001E6DDD /* BiteBuddies */;
+			targetProxy = EAE66C0529A0CA8F001E6DDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EAE66C0C29A0CA8F001E6DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAE66C0D29A0CA8F001E6DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAE66C0F29A0CA8F001E6DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BiteBuddies/Preview Content\"";
+				DEVELOPMENT_TEAM = MTY9AB98HP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hi.BiteBuddies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAE66C1029A0CA8F001E6DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BiteBuddies/Preview Content\"";
+				DEVELOPMENT_TEAM = MTY9AB98HP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hi.BiteBuddies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EAE66C1229A0CA8F001E6DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MTY9AB98HP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hi.BiteBuddiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BiteBuddies.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BiteBuddies";
+			};
+			name = Debug;
+		};
+		EAE66C1329A0CA8F001E6DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MTY9AB98HP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hi.BiteBuddiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BiteBuddies.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BiteBuddies";
+			};
+			name = Release;
+		};
+		EAE66C1529A0CA8F001E6DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MTY9AB98HP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hi.BiteBuddiesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BiteBuddies;
+			};
+			name = Debug;
+		};
+		EAE66C1629A0CA8F001E6DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MTY9AB98HP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hi.BiteBuddiesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BiteBuddies;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAE66BE529A0CA8E001E6DDD /* Build configuration list for PBXProject "BiteBuddies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE66C0C29A0CA8F001E6DDD /* Debug */,
+				EAE66C0D29A0CA8F001E6DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAE66C0E29A0CA8F001E6DDD /* Build configuration list for PBXNativeTarget "BiteBuddies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE66C0F29A0CA8F001E6DDD /* Debug */,
+				EAE66C1029A0CA8F001E6DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAE66C1129A0CA8F001E6DDD /* Build configuration list for PBXNativeTarget "BiteBuddiesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE66C1229A0CA8F001E6DDD /* Debug */,
+				EAE66C1329A0CA8F001E6DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAE66C1429A0CA8F001E6DDD /* Build configuration list for PBXNativeTarget "BiteBuddiesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE66C1529A0CA8F001E6DDD /* Debug */,
+				EAE66C1629A0CA8F001E6DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAE66BE229A0CA8E001E6DDD /* Project object */;
+}
