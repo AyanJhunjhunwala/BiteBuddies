@@ -4,7 +4,8 @@ import AVFoundation
 @main
 struct BiteBuddiesApp: App {
     @State var isLoggedIn = false
-    
+    @State private var showDetails = false
+
     var body: some Scene {
         WindowGroup {
             ContentView(isLoggedIn: $isLoggedIn)
@@ -13,22 +14,52 @@ struct BiteBuddiesApp: App {
 }
 
 struct ContentView: View {
-    @Binding var isLoggedIn: Int
-    
-    
+    @Binding var isLoggedIn: Bool
     var body: some View {
         if isLoggedIn {
-            LoggedInView()
+            LoggedInView().matchedGeometryEffect(id:"details" ,in: namespace)
         } else{
-            LoginView(isLoggedIn: $isLoggedIn)
+            LoginView(isLoggedIn: $isLoggedIn).matchedGeometryEffect(id: "summary",in: namespace)
         }
     }
+    private let namespace = Namespace().wrappedValue
+    
 }
 struct PreviewScreen_Previews: PreviewProvider {
     static var previews: some View {
         LoggedInView()
     }
 }
+struct SummaryView: View {
+    var body: some View {
+        VStack {
+            Text("Summary View")
+                .font(.title)
+                .padding()
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.blue)
+    }
+}
+
+struct DetailsView: View {
+    var body: some View {
+        VStack {
+            Text("Details View")
+                .font(.title)
+                .padding()
+            Spacer()
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.green)
+    }
+}
+ 
+
+
+
+
+
 struct Dish: Identifiable {
     var id = UUID()
     var name: String
@@ -39,8 +70,9 @@ struct User: Identifiable {
     var id = UUID()
     var name: String
 }
-
 struct LoggedInView: View {
+    @State private var foodImage: UIImage?
+    
     var body: some View {
         VStack {
             HStack {
@@ -60,15 +92,18 @@ struct LoggedInView: View {
                     .foregroundColor(.white)
                     .padding()
                     .onTapGesture {
-                        camerahit=true;
+                        // Add functionality for camera button
                     }
             }
+            .padding(.horizontal)
+            .padding(.top, 20)
             
             ScrollView {
                 VStack(spacing: 20) {
                     ForEach(0..<5) { index in
                         HStack {
-                            Image(systemName: "person.fill")
+                            
+                            Image("FoodImgs")
                                 .resizable()
                                 .frame(width: 50, height: 50)
                                 .foregroundColor(.white)
@@ -78,7 +113,7 @@ struct LoggedInView: View {
                                     .font(.title2)
                                     .fontWeight(.bold)
                                     .foregroundColor(.white)
-                                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+                                Text("Join us for a fun evening of cooking and socializing with other foodies in the area! All skill levels welcome. Please let us know if you have any dietary restrictions or preferences.")
                                     .font(.body)
                                     .foregroundColor(.white)
                             }
@@ -96,7 +131,7 @@ struct LoggedInView: View {
                             .padding(.trailing, 10)
                         }
                         .frame(maxWidth: .infinity)
-                        .background(Color(red: 30/255, green: 30/255, blue: 30/255))
+                        .background(Color(red: 50/255, green: 50/255, blue: 50/255))
                         .cornerRadius(10)
                     }
                 }
@@ -104,87 +139,96 @@ struct LoggedInView: View {
                 .padding(.bottom, 20)
             }
             
-
-        }
-        .background(Color.black.ignoresSafeArea())
-        .navigationBarItems(trailing:
-            Button(action: {
-               
-            }) {
-                Image(systemName: "camera.fill")
+            if let foodImage = foodImage {
+                Image(uiImage: foodImage)
                     .resizable()
-                    .frame(width: 25, height: 20)
-                    .foregroundColor(.white)
-                    .padding()
-            })
-    }
-}
-
-
-struct DishDetailView: View {
-    var dish: Dish
-    var user: User
-    
-    var body: some View {
-        VStack {
-            Text(dish.name)
-                .font(.title)
-            Text("Created by: \(dish.creator)")
-                .font(.subheadline)
-            Divider()
-            Text("Participating Users:")
-                .font(.headline)
-            Text(user.name)
-                .font(.subheadline)
-                .foregroundColor(.blue)
-            Divider()
-            Button("Join Dish") {
-                // Add user to participating users for this dish
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: 200)
+                    .padding(.horizontal)
             }
         }
-        .padding()
-        .navigationTitle(dish.name)
+        .background(Color(red: 80/255, green: 80/255, blue: 80/255).ignoresSafeArea())
+        .navigationBarItems(trailing:
+                                Button(action: {
+            // Add functionality for camera button
+        }) {
+            Image(systemName: "camera.fill")
+                .resizable()
+                .frame(width: 25, height: 20)
+                .foregroundColor(.white)
+                .padding()
+        })
+        
+        
     }
-}
-
-
-struct LoginView: View {
-    // MARK: Properties
-    @State private var username = ""
-    @State private var password = ""
-    @Binding var isLoggedIn: Bool
     
-    // MARK: View Body
-    var body: some View {
-        VStack {
-            Color.black.ignoresSafeArea()
-            Image(systemName: "carrot.fill")
-                .foregroundColor(Color.orange)
-            Text("BiteBuddies")
-                .font(Font.custom("Times", size: 40))
-                .padding(.bottom, 50)
-                .foregroundColor(Color.white)
-            VStack(alignment: .leading) {
-                Text("Username")
-                TextField("Enter your username", text: $username)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding(.bottom, 20)
-                Text("Password")
-                SecureField("Enter your password", text: $password)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-            }
-            .padding(.bottom, 50)
-            Button("Login") {
-                if username == "user" && password == "password" {
-                    isLoggedIn = true
+    
+    
+    struct DishDetailView: View {
+        var dish: Dish
+        var user: User
+        
+        var body: some View {
+            VStack {
+                Text(dish.name)
+                    .font(.title)
+                Text("Created by: \(dish.creator)")
+                    .font(.subheadline)
+                Divider()
+                Text("Participating Users:")
+                    .font(.headline)
+                Text(user.name)
+                    .font(.subheadline)
+                    .foregroundColor(.blue)
+                Divider()
+                Button("Join Dish") {
+                    // Add user to participating users for this dish
                 }
             }
-            .frame(width: 200, height: 50)
-            .background(Color.blue)
-            .foregroundColor(.white)
-            .cornerRadius(10)
+            .padding()
+            .navigationTitle(dish.name)
         }
-        .padding()
-        .background(Color.black)
     }
 }
+    
+    struct LoginView: View {
+        // MARK: Properties
+        @State private var username = ""
+        @State private var password = ""
+        @Binding var isLoggedIn: Bool
+        
+        // MARK: View Body
+        var body: some View {
+            VStack {
+                Color.black.ignoresSafeArea()
+                Image(systemName: "carrot.fill")
+                    .foregroundColor(Color.orange)
+                Text("BiteBuddies")
+                    .font(Font.custom("Times", size: 40))
+                    .padding(.bottom, 50)
+                    .foregroundColor(Color.white)
+                VStack(alignment: .leading) {
+                    Text("Username")
+                    TextField("Enter your username", text: $username)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .padding(.bottom, 20)
+                    Text("Password")
+                    SecureField("Enter your password", text: $password)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                }
+                .padding(.bottom, 50)
+                Button("Login") {
+                    if username == "user" && password == "password" {
+                        isLoggedIn = true
+                    }
+                }
+                .frame(width: 200, height: 50)
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .cornerRadius(10)
+            }
+            .padding()
+            .background(Color.black)
+        }
+    }
+
