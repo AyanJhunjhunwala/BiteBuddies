@@ -13,6 +13,7 @@
 		EAE66BFF29A0CA8F001E6DDD /* BiteBuddiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE66BFE29A0CA8F001E6DDD /* BiteBuddiesTests.swift */; };
 		EAE66C0929A0CA8F001E6DDD /* BiteBuddiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE66C0829A0CA8F001E6DDD /* BiteBuddiesUITests.swift */; };
 		EAE66C0B29A0CA8F001E6DDD /* BiteBuddiesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE66C0A29A0CA8F001E6DDD /* BiteBuddiesUITestsLaunchTests.swift */; };
+		EAE66C1A29A15DF2001E6DDD /* Loggedin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE66C1929A15DF2001E6DDD /* Loggedin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		EAE66C0429A0CA8F001E6DDD /* BiteBuddiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiteBuddiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE66C0829A0CA8F001E6DDD /* BiteBuddiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiteBuddiesUITests.swift; sourceTree = "<group>"; };
 		EAE66C0A29A0CA8F001E6DDD /* BiteBuddiesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiteBuddiesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EAE66C1929A15DF2001E6DDD /* Loggedin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loggedin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		EAE66BEC29A0CA8E001E6DDD /* BiteBuddies */ = {
 			isa = PBXGroup;
 			children = (
+				EAE66C1929A15DF2001E6DDD /* Loggedin.swift */,
 				EAE66BEF29A0CA8E001E6DDD /* ContentView.swift */,
 				EAE66BF129A0CA8E001E6DDD /* Assets.xcassets */,
 				EAE66BF329A0CA8E001E6DDD /* Preview Content */,
@@ -254,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE66C1A29A15DF2001E6DDD /* Loggedin.swift in Sources */,
 				EAE66BF029A0CA8E001E6DDD /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
