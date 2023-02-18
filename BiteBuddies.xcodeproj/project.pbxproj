@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D036C62929A17413001BEC09 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036C62829A17413001BEC09 /* Users.swift */; };
+		D036C62A29A17413001BEC09 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036C62829A17413001BEC09 /* Users.swift */; };
+		D036C62B29A17413001BEC09 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036C62829A17413001BEC09 /* Users.swift */; };
 		EAE66BF029A0CA8E001E6DDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE66BEF29A0CA8E001E6DDD /* ContentView.swift */; };
 		EAE66BF229A0CA8E001E6DDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE66BF129A0CA8E001E6DDD /* Assets.xcassets */; };
 		EAE66BF529A0CA8E001E6DDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE66BF429A0CA8E001E6DDD /* Preview Assets.xcassets */; };
 		EAE66BFF29A0CA8F001E6DDD /* BiteBuddiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE66BFE29A0CA8F001E6DDD /* BiteBuddiesTests.swift */; };
 		EAE66C0929A0CA8F001E6DDD /* BiteBuddiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE66C0829A0CA8F001E6DDD /* BiteBuddiesUITests.swift */; };
 		EAE66C0B29A0CA8F001E6DDD /* BiteBuddiesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE66C0A29A0CA8F001E6DDD /* BiteBuddiesUITestsLaunchTests.swift */; };
-		EAE66C1A29A15DF2001E6DDD /* Loggedin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE66C1929A15DF2001E6DDD /* Loggedin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D036C62829A17413001BEC09 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		EAE66BEA29A0CA8E001E6DDD /* BiteBuddies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiteBuddies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE66BEF29A0CA8E001E6DDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EAE66BF129A0CA8E001E6DDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,7 +46,6 @@
 		EAE66C0429A0CA8F001E6DDD /* BiteBuddiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiteBuddiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE66C0829A0CA8F001E6DDD /* BiteBuddiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiteBuddiesUITests.swift; sourceTree = "<group>"; };
 		EAE66C0A29A0CA8F001E6DDD /* BiteBuddiesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiteBuddiesUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		EAE66C1929A15DF2001E6DDD /* Loggedin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loggedin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,8 @@
 		EAE66BEC29A0CA8E001E6DDD /* BiteBuddies */ = {
 			isa = PBXGroup;
 			children = (
-				EAE66C1929A15DF2001E6DDD /* Loggedin.swift */,
 				EAE66BEF29A0CA8E001E6DDD /* ContentView.swift */,
+				D036C62829A17413001BEC09 /* Users.swift */,
 				EAE66BF129A0CA8E001E6DDD /* Assets.xcassets */,
 				EAE66BF329A0CA8E001E6DDD /* Preview Content */,
 			);
@@ -257,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAE66C1A29A15DF2001E6DDD /* Loggedin.swift in Sources */,
+				D036C62929A17413001BEC09 /* Users.swift in Sources */,
 				EAE66BF029A0CA8E001E6DDD /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D036C62A29A17413001BEC09 /* Users.swift in Sources */,
 				EAE66BFF29A0CA8F001E6DDD /* BiteBuddiesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAE66C0929A0CA8F001E6DDD /* BiteBuddiesUITests.swift in Sources */,
+				D036C62B29A17413001BEC09 /* Users.swift in Sources */,
 				EAE66C0B29A0CA8F001E6DDD /* BiteBuddiesUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
