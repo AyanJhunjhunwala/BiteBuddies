@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EAE66BEE29A0CA8E001E6DDD /* BiteBuddiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE66BED29A0CA8E001E6DDD /* BiteBuddiesApp.swift */; };
 		EAE66BF029A0CA8E001E6DDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE66BEF29A0CA8E001E6DDD /* ContentView.swift */; };
 		EAE66BF229A0CA8E001E6DDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE66BF129A0CA8E001E6DDD /* Assets.xcassets */; };
 		EAE66BF529A0CA8E001E6DDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE66BF429A0CA8E001E6DDD /* Preview Assets.xcassets */; };
@@ -35,7 +34,6 @@
 
 /* Begin PBXFileReference section */
 		EAE66BEA29A0CA8E001E6DDD /* BiteBuddies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiteBuddies.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAE66BED29A0CA8E001E6DDD /* BiteBuddiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiteBuddiesApp.swift; sourceTree = "<group>"; };
 		EAE66BEF29A0CA8E001E6DDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EAE66BF129A0CA8E001E6DDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAE66BF429A0CA8E001E6DDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 		EAE66BEC29A0CA8E001E6DDD /* BiteBuddies */ = {
 			isa = PBXGroup;
 			children = (
-				EAE66BED29A0CA8E001E6DDD /* BiteBuddiesApp.swift */,
 				EAE66BEF29A0CA8E001E6DDD /* ContentView.swift */,
 				EAE66BF129A0CA8E001E6DDD /* Assets.xcassets */,
 				EAE66BF329A0CA8E001E6DDD /* Preview Content */,
@@ -258,7 +255,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAE66BF029A0CA8E001E6DDD /* ContentView.swift in Sources */,
-				EAE66BEE29A0CA8E001E6DDD /* BiteBuddiesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
