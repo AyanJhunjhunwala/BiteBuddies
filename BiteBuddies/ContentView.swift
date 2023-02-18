@@ -13,7 +13,7 @@ struct BiteBuddiesApp: App {
 }
 
 struct ContentView: View {
-    @Binding var isLoggedIn: Bool
+    @Binding var isLoggedIn: Int
     
     
     var body: some View {
